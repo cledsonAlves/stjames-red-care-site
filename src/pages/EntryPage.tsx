@@ -97,7 +97,7 @@ const EntryPage = () => {
             </div>
             <div className="flex items-center gap-3">
               <Bot className="h-5 w-5 text-primary" />
-              <span className="text-sm">Chats com Agentes de IA</span>
+              <span className="text-sm">Chats com atendimento no WhatsApp 24/7</span>
             </div>
             <div className="pt-2 border-t">
               <a 
