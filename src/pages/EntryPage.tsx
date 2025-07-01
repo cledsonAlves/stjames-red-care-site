@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,15 +10,19 @@ import { useToast } from "@/hooks/use-toast";
 const EntryPage = () => {
   const [email, setEmail] = useState("");
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
       toast({
         title: "Email enviado!",
-        description: "Entraremos em contato em breve para validação e orçamento.",
+        description: "Redirecionando para o site...",
       });
-      // Here you would typically send the email to your backend
+      // Navigate to the main site after successful email submission
+      setTimeout(() => {
+        navigate("/hospital");
+      }, 1000);
     }
   };
 
