@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { Linkedin, Mail, Code, Smartphone } from "lucide-react";
+import { Linkedin, Mail, Code, Smartphone, Bot } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const EntryPage = () => {
@@ -89,6 +89,10 @@ const EntryPage = () => {
             <div className="flex items-center gap-3">
               <Code className="h-5 w-5 text-primary" />
               <span className="text-sm">Desenvolvimento Web</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Bot className="h-5 w-5 text-primary" />
+              <span className="text-sm">Chats com Agentes de IA</span>
             </div>
             <div className="pt-2 border-t">
               <a 
